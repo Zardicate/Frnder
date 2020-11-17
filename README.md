@@ -8,7 +8,7 @@ Website using PHP and MySQLi that helps you find your roommate. No more stress a
 
 3.MySQLi
 
-##STEPS
+## STEPS
 
 1. Import frnder.sql in your MySQLi Database - http://localhost/phpmyadmin
 2. Run PHP server and open index.php in Frnder folder.
