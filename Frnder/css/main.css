@@ -1,0 +1,542 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    color: #888;
+    font: 300 16px/22px "Hevlvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #293f50;
+}
+
+
+/*
+===================================
+Grid
+===================================
+*=universal selector
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.grid,
+.container {
+    margin: 0px auto;
+    width: 960px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-2-3 {
+    width: 66.66%;
+}
+
+
+/*
+===================================
+Clearfix
+===================================
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+
+.row {
+    background: #fff;
+    min-width: 960px;
+    padding: 66px 0 44px 0;
+}
+
+
+/*
+===================================
+Topography
+===================================
+*/
+
+h1,
+h2,
+h3,
+h4 {
+    color: #648880;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1,
+h3,
+h4,
+h5,
+p {
+    margin-bottom: 22px;
+}
+
+
+/*
+===================================
+Links
+===================================
+*/
+
+a:hover {
+    color: #a9b2b9;
+}
+
+a {
+    color: #648880;
+    text-decoration: none;
+}
+
+.primary-header a,
+.primary-footer a {
+    color: #fff;
+}
+
+.primary-header a:hover,
+.primary-footer a:hover {
+    color: #648880;
+}
+
+.teaser a:hover h3 {
+    color: #a9b2b9;
+}
+
+
+/*
+===================================
+Buttons
+===================================
+*/
+
+.btn-base {
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-gen {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+}
+
+.btn-gen:hover {
+    background: #fff;
+    color: #648880;
+}
+
+.btn-pur {
+    border: 0;
+    background-color: #648880;
+    padding: 10px 30px;
+    font-size: 14px;
+}
+
+.btn-pur:hover {
+    background: #77A198;
+}
+
+
+/*
+===================================
+home
+===================================
+*/
+
+.intro {
+    padding: 40px 80px 66px 80px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+}
+
+.intro h2 {
+    font-size: 36px;
+}
+
+.intro p {
+    font-size: 24px;
+}
+
+
+/*
+===================================
+Primary Header
+===================================
+*/
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.logo {
+    border-top: 4px solid #648880;
+    padding: 40px 0 22px 0;
+    float: left;
+    font-size: 48px;
+    line-height: 44px;
+    margin-bottom: 0px;
+}
+
+.tagline {
+    margin: 30px 0 40px 0;
+    text-align: right;
+}
+
+.tagline a {
+    font-size: 48px;
+    line-height: 44px;
+    float: right;
+}
+
+.tagline a:hover {
+    color: rgb(180, 178, 178);
+}
+
+.primary-nav {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav a {
+    margin-right: 5px;
+}
+
+
+/*
+===================================
+Primary Footer
+===================================
+*/
+
+.primary-footer small {
+    float: left;
+    font-weight: 400;
+}
+
+.primary-footer {
+    padding: 44px 0 44px 0;
+    color: #648880;
+    font-size: 14px;
+}
+
+
+/*
+===================================
+Form
+===================================
+*/
+
+form {
+    margin-bottom: 25px;
+}
+
+input,
+select,
+textarea {
+    font: 300 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.register-form {
+    color: #648880;
+    font-weight: 400;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    color: #888;
+    display: block;
+    margin: 5px 0 25px 0;
+    padding: 5px;
+}
+
+.register-form input,
+.register-form textarea {
+    width: 100%;
+}
+
+.register-form select {
+    height: 35px;
+}
+
+.register-form textarea {
+    height: 80px;
+}
+
+.merit-list {
+    list-style: square;
+    margin: 0 0 20px 30px;
+}
+
+
+/*
+===================================
+Login
+===================================
+*/
+
+.loginform {
+    width: 300px;
+    margin: 0px auto;
+    border: 2px solid #648880;
+    box-shadow: 0 0 20px #8b8b8b;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+/*
+===================================
+About
+===================================
+*/
+
+.row1 {
+    background-color: #bfe7df;
+    min-width: 960px;
+    padding: 66px 0 44px 0;
+    border-top: 50px solid #293f50;
+}
+
+.row2 {
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+
+/*
+===================================
+profile Q&A
+===================================
+*/
+
+.profile {
+    text-align: center;
+}
+
+.table {
+    margin-bottom: 60px;
+    width: 100%;
+    border-collapse: collapse;
+    padding: auto 0;
+    color: #293f50;
+    text-align: left;
+}
+
+.table th {
+    font-size: 25px;
+    background-color: #648880;
+    color: white;
+    padding: 20px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #ececec;
+}
+
+.table td {
+    padding: 20px;
+}
